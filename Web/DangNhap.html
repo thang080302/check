@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="DangKy.css">
+    <link rel="icon" href="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-a-blooming-lotus-flower-image_1443790.jpg" type="image/x-icon" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+
+   </style>
+</head>
+<body>
+    <table style="text-align: center; margin: auto;" border="1" cellpadding="10px">
+        <thead>
+            <td colspan="2">Xóa phần tử lớn nhất trong mảng</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Username </td>
+                <td>
+                    <input type="text" class="username">
+                </td>
+            </tr>
+            <tr>
+                <td> Password </td>
+                <td>
+                    <input type="text" class="password">
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="clear">Xóa</button>
+                    <button class="check">Check</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    const ispass = /^(?=.*[A-Z])([a-zA-Z0-9]{8,})$/
+    const tel = /^[0-9]+$/;
+    const check = document.querySelector('.check')
+    check.addEventListener('click',function(){
+        const username = document.querySelector('.username')
+        const arr = username.value.split(',');
+        var i = 0;
+        const arr_chan = arr.filter(function(arr){
+            return arr[i]%2==0 && arr[i] > 0;
+            i++; 
+        })
+        const arr_le = arr.filter(function(arr){
+            return arr[i]%2==1;
+            i++; 
+        })
+        const arr_0 = arr.filter(function(arr){
+            return arr[i]==0;
+            i++; 
+        })
+        const new_arr = arr_chan.concat(arr_0.concat(arr_le))
+        const result = document.querySelector('.password')
+        for (let i = 0; i < new_arr.length; i++) {
+            result.value += new_arr[i] + " ";
+            
+        }
+    })
+    
+    const clear = document.querySelector('.clear')
+    clear.addEventListener('click', function(){
+        const result = document.querySelector('.password')
+        result.value = "";
+        const username = document.querySelector('.username')
+        username.value = ""
+    })
+</script>

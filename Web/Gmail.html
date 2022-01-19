@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail</title>
+    <style>
+      fieldset.main {
+        margin: auto;
+        margin-top: 200px;
+        width: 47%;
+      }
+      div.google {
+        font-size: 30px;
+        color: blue;
+      }
+      .o1 {
+        color: red;
+      }
+      .o2 {
+        color: yellow;
+      }
+      .g {
+        color: blue;
+      }
+      .l {
+        color: green;
+      }
+      .e {
+        color: red;
+      }
+    </style>
+    <script>
+      function ktra() {
+        var x = document.getElementsByTagName("input")[0].value;
+        var y = document.getElementsByTagName("input")[1].value;
+        var telphone = document.getElementsByTagName("input")[3].value;
+        var password = document.getElementsByTagName("input")[4].value;
+
+        const isAlpha = /^[a-zA-Z]+$/;
+        if (
+          isAlpha.test(x) == false ||
+          isAlpha.test(y) == false ||
+          x == "" ||
+          y == ""
+        ) {
+          alert("Yêu cầu họ tên không được để trống và nhập chữ cái !");
+        }
+
+        const isNumber = /^[0-9]+$/;
+        if (isNumber.test(telphone) == false)
+          alert("Mục điện thoại yêu cầu là số !");
+
+        const format =
+          /^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+        if (format.test(password) == false) {
+          alert(
+            "Yêu cầu mật khẩu đủ mạnh : kí tự,chữ cái,chữ số và tối thiểu 8 kí tự"
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset class="main">
+      <div class="google">
+        G<span class="o1">o</span><span class="o2">o</span
+        ><span class="o">g</span><span class="l">l</span
+        ><span class="e">e</span>
+      </div>
+      <div>Tạo tài khoản Google</div>
+      <div>Tiếp tục tới Gmail</div>
+      <br />
+      <input type="text" placeholder="Họ" title="Nhập họ" id="demo" />
+      <input type="text" placeholder="Tên" title="Nhập tên" id="demo" />
+      <br /><br />
+      <input
+        type="text"
+        placeholder="Tên người dùng"
+        style="width: 338px"
+        title="Yêu cầu nhập tên người dùng"
+      />
+      <br />
+      <p>*Bạn có thể sử dụng chữ cái ,số và dấu chấm</p>
+      <input
+        type="text"
+        placeholder="Số điện thoại"
+        title="Nhập số điện thoại"
+      />
+      <br />
+      <br />
+      <input type="text" placeholder="Mật khẩu" title="Nhập mật khẩu" />
+      <input type="text" placeholder="Xác nhận" title="Nhập mã xác nhận" />
+      <p>*Sử dụng 8 kí tự trở lên và kết hợp chữ cái, chữ số và biểu tượng</p>
+      <input type="checkbox" /> Hiện mật khẩu <br /><br />
+      <input type="submit" value="Đăng nhập" />
+      <input
+        type="button"
+        value="Tiếp theo"
+        onclick="ktra()"
+        style="
+          float: right;
+          background-color: rgb(111, 164, 243);
+          color: white;
+          padding: 5px 20px;
+          border-radius: 10%;
+        "
+      />
+    </fieldset>
+  </body>
+</html>

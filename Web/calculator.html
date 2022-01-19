@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <style>
+           *{
+               margin: 0px;
+               padding: 0px;
+           }
+           div.calculator{
+               margin-top: 60px;
+               margin-left: 60px;
+           }
+           div.calculator input{
+               padding: 50px;
+               font-size: 30px;
+           }
+        </style>
+        <script>
+            var ptr =""
+            function key(x) {
+                ptr += x;
+                document.getElementById("num").innerHTML = ptr
+            }
+            function equal() {
+                var result = eval(ptr);
+                ptr ="";
+                alert(result);
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div class="calculator">
+            <input type="button" value="+" onclick="key(this.value)" ></input>
+            <input type="button" value="0" onclick="key(this.value)" ></input>
+            <input type="button" value="1" onclick="key(this.value)" ></input>
+            <input type="button" value="2" onclick="key(this.value)" ></input>
+            <input type="button" value="3" onclick="key(this.value)" ></input>
+            <input type="button" value="4" onclick="key(this.value)" ></input><br>
+            <input type="button" value="5" onclick="key(this.value)" ></input>
+            <input type="button" value="6" onclick="key(this.value)" ></input>
+            <input type="button" value="7" onclick="key(this.value)" ></input>
+            <input type="button" value="8" onclick="key(this.value)" ></input>
+            <input type="button" value="9" onclick="key(this.value)" ></input>
+            <input type="button" value="=" onclick="equal() " ></input>
+        </div>
+    </body>
+</html>

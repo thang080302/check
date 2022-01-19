@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    color: #333;
+}
+#menu ul {
+    background-color: chocolate;
+    width: 250px;
+    list-style-type: none;
+    text-align: center;
+}
+#menu ul li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+#menu ul li a{
+    text-decoration: none;
+    display: block;
+}
+#menu ul li a:hover {
+    background-color: white;
+    color: black;
+}
+#menu ul li > .submenu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+#menu ul li:hover .submenu {
+    display: block;
+    color: black;
+    background-color: #1f568B;
+   
+}

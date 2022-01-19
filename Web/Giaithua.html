@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Nhập giá trị">
+        <input type="button" value="Enter" onclick="result()">
+    </form>
+    <p id="demo"></p>
+    <script>
+        function gt(n) {
+            if(n==1) return 1
+            return n*gt(n-1)
+        }
+      //console.log(gt(3));
+        function result() {
+            var x = document.getElementsByTagName('input')[0].value;
+            if(x>'A' && x<'z') alert('No !')
+            else document.getElementById('demo').innerHTML = x + "! = " + gt(x);
+        }
+        KeyboardEvent()
+    </script>
+</body>
+</html>

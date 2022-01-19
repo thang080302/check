@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Tổng hợp</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <label for="#">Nhập 3 hệ số lần lượt và cách nhau dấu cách : </label>
+    <input type="text">
+    <input type="button" value="Confirm" onclick="calculator()" >
+    <p id="result"></p>
+    <script>
+        function calculator()
+        {
+            var x = document.getElementsByTagName('input')[0].value
+            var y = x.split(" ");
+            if(y.length >= 4) document.getElementById('result').innerHTML = "Nhập thừa giá trị !"
+            else 
+            {
+                var a = y[0];
+                var b = y[1];
+                var c = y[2];
+                if(a!=0) 
+                {
+                    var delta = b*b - 4*a*c;
+                    if(delta>0) document.getElementById('result').innerHTML = "x1 = " + ((-b - Math.sqrt(delta))/(2*a)) + "<br>" + "x2 = " + ((-b + Math.sqrt(delta))/(2*a));
+                    if(delta==0) document.getElementById('result').innerHTML = "x1 = x2 = " + (-b/(2*a));
+                    else document.getElementById('result').innerHTML = "Phương trình vô nghiệm !";
+                }
+                if(a==0) 
+                {
+                    if(b==0 && c==0) document.getElementById('result').innerHTML = "Phương trình vô số nghiệm !"
+                    if(b==0 && c!=0) document.getElementById('result').innerHTML = "Phương trình vô nghiệm !"
+                    if(b!=0) document.getElementById('result').innerHTML = "Phương trình có nghiệm duy nhất x = " + (-c/(b))
+                }
+            } 
+        }
+    </script>
+</body> 

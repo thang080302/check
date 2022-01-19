@@ -1,0 +1,45 @@
+<!doctype html>
+	<head>
+		<title>luyen js</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			#nhap{margin-left: 144px; margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<form>
+			<label>Nhập n:</label>
+			<input type="text " id="nhap"><br>
+			<label>Tổng n số nguyên tố đầu tiên :</label>
+			<input type="text " id="kq"><br>
+		</form>
+		<input type="button" value="Tính tổng" onclick="tinh()">
+		<input type="button" value="xóa" onclick="xoa()">
+        <p id="demo"> : </p>
+		<script type="text/javascript">
+			function ktsont(n) {
+				if (n < 2) 
+                    return false;
+				for (var i = 2; i <= Math.sqrt(n); i++) {
+        			if (n % i == 0) {
+            			return false;
+        			}
+   				}
+    			return true;
+			}
+			function tinh() {
+				var n = document.getElementById('nhap').value;
+				var dem = 0; 
+    			var i = 2;   
+    			var sum =0;
+    			while (dem < n) {
+        			if (ktsont(i) == true) {
+                		sum+=i;
+                        dem++;
+        			}
+       				i++;
+                }
+                document.getElementById('kq').value=sum	
+            }	
+		</script>
+	</body>

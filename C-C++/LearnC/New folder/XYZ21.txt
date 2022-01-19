@@ -1,0 +1,2 @@
+Mang : -1 -2 -3 -4 -5 
+Gia tri trung binh phan tu le am : -3

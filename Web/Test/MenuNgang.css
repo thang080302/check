@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: inline-block;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav > li {
+    display: inline-block;
+}
+.nav  li{
+    position: relative;
+    list-style-type: none;
+}
+.nav > li > a{
+    color: rgb(0, 0, 0);
+}
+.nav  li  a{
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+.nav li:hover > a{
+    color: #fff;
+    background-color: #000;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.subnav li{
+    display: inline-block; 
+}
+.subnav li a {
+    background-color: antiquewhite;
+    color: #000;
+}
+.subnav li:hover a{
+    display: block;
+    color: #000;
+    background-color: #ccc; 
+}
+.menu{
+    display: inline-block;
+    margin-top: 110px;
+    list-style-type: none;
+}
+.menu li{
+    display: block;
+    position: relative;
+    background-color: antiquewhite;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    color: #000;
+}
+.menu li:hover > a{
+    color: #fff;
+    background-color: #000;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu{
+    display :none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.submenu > li{
+    display: block;
+    width: 82px;
+}
+.submenu > li > a{
+    display: block;
+}
+.submenu li:hover a{
+    display: block;
+    color: #000;
+    background-color: #ccc; 
+}

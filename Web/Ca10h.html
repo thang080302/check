@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="DangKy.css">
+    <link rel="icon" href="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-a-blooming-lotus-flower-image_1443790.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <table style="text-align: center; margin: auto;" border="1" cellpadding="10px">
+        <thead>
+            <td colspan="2">Nhập số nguyên dương</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Nhập số thứ nhất</td>
+                <td>
+                    <input type="text" class="number1">
+                </td>
+            </tr>
+            <tr>
+                <td> Nhập số thứ 2</td>
+                <td>
+                    <input type="text" class="number2">
+                </td>
+            </tr>
+            <tr>
+                <td> Ước chung lớn nhất </td>
+                <td>
+                    <input type="text" class="UCLN">
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="clear">Hủy Bỏ</button>
+                    <button class="check">Đếm</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    function gcd_rec(a, b) {
+        if (b) {
+            return gcd_rec(b, a % b);
+        } 
+        else {
+            return Math.abs(a);
+        }
+    }
+    const check = document.querySelector('.check')
+    check.addEventListener('click',function(){
+
+        const number1 = document.querySelector('.number1')
+        const number2 = document.querySelector('.number2')
+
+        const result = document.querySelector('.UCLN')
+        result.value = gcd_rec(number1.value, number2.value)
+    })
+    
+    const clear = document.querySelector('.clear')
+    clear.addEventListener('click', function(){
+        const result = document.querySelector('.UCLN')
+        result.value = "";
+        const number = document.querySelector('.number')
+        number.value = ""
+    })
+</script>

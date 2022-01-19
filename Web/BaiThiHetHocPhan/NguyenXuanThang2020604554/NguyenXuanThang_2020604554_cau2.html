@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submit {
+            margin-top: 10px;
+        }
+
+        form {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <div class="input">
+            <p>Họ và tên: </p>
+            <input type="text" id="input">
+        </div>
+
+        <div class="output">
+            <p>Tên: </p>
+            <input type="text" id="output">
+        </div>
+        <div class="submit">
+            <button id="submit">Hiển thị</button>
+            <button id="delete">Huỷ bỏ</button>
+        </div>
+    </form>
+
+    <script>
+        let output = document.getElementById("output");
+        function TachTen(name) {
+            let divide = [];
+            divide = name.split(" ");
+            let k = divide[divide.length - 1]
+            return k;
+        }
+
+        document.getElementById("submit").addEventListener("click", (e) => {
+            let name = document.getElementById("input").value;
+            let a = TachTen(name);
+            output.value = a;
+            e.preventDefault();
+        });
+
+        document.getElementById("delete").addEventListener("click", () => {
+            document.getElementById("form").reset();
+        });
+    </script>
+</body>
+
+</html>

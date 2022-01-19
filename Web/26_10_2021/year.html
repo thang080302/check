@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            background-color: pink;
+            width: 300px;
+            height: 200px;
+            font-size: 18px;
+        }
+    </style>
+    <script src="year.js"></script>
+</head>
+<body>
+    <table align="center" class="table" border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Chương trình tra tuổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Nhập năm</th>
+                <th>
+                    <input type="text" class="num" id="one">
+                </th>
+            </tr>
+            <tr>
+                <th>Là năm</th>
+                <th>
+                    <input type="text" class="word" id="result">
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Delete" name="Delete" onclick="Xoa()" >
+                    <input type="button" value="Search" name="Search" onclick="Search()" id="two">
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

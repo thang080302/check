@@ -1,0 +1,30 @@
+D:\môn C#\bin\Debug\net6.0\môn C#.exe
+D:\môn C#\bin\Debug\net6.0\môn C#.deps.json
+D:\môn C#\bin\Debug\net6.0\môn C#.runtimeconfig.json
+D:\môn C#\bin\Debug\net6.0\môn C#.dll
+D:\môn C#\bin\Debug\net6.0\ref\môn C#.dll
+D:\môn C#\bin\Debug\net6.0\môn C#.pdb
+D:\môn C#\obj\Debug\net6.0\môn C#.csproj.AssemblyReference.cache
+D:\môn C#\obj\Debug\net6.0\môn C#.GeneratedMSBuildEditorConfig.editorconfig
+D:\môn C#\obj\Debug\net6.0\môn C#.AssemblyInfoInputs.cache
+D:\môn C#\obj\Debug\net6.0\môn C#.AssemblyInfo.cs
+D:\môn C#\obj\Debug\net6.0\môn C#.csproj.CoreCompileInputs.cache
+D:\môn C#\obj\Debug\net6.0\môn C#.dll
+D:\môn C#\obj\Debug\net6.0\ref\môn C#.dll
+D:\môn C#\obj\Debug\net6.0\môn C#.pdb
+D:\môn C#\obj\Debug\net6.0\môn C#.genruntimeconfig.cache
+d:\Learning\LearnC#\bin\Debug\net6.0\môn C#.exe
+d:\Learning\LearnC#\bin\Debug\net6.0\môn C#.deps.json
+d:\Learning\LearnC#\bin\Debug\net6.0\môn C#.runtimeconfig.json
+d:\Learning\LearnC#\bin\Debug\net6.0\môn C#.dll
+d:\Learning\LearnC#\bin\Debug\net6.0\ref\môn C#.dll
+d:\Learning\LearnC#\bin\Debug\net6.0\môn C#.pdb
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.csproj.AssemblyReference.cache
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.GeneratedMSBuildEditorConfig.editorconfig
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.AssemblyInfoInputs.cache
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.AssemblyInfo.cs
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.csproj.CoreCompileInputs.cache
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.dll
+d:\Learning\LearnC#\obj\Debug\net6.0\ref\môn C#.dll
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.pdb
+d:\Learning\LearnC#\obj\Debug\net6.0\môn C#.genruntimeconfig.cache

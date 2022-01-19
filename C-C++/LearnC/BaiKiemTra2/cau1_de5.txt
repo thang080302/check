@@ -1,0 +1,5 @@
+1 3 2 4 5 
+
+Mang sau khi sap xep : 1 2 3 4 5 
+
+Mang sau khi copy : 1 2 3 4 5 2 4 
